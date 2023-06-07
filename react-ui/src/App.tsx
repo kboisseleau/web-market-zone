@@ -4,13 +4,10 @@ import {
   Route,
   Link
 } from "react-router-dom";
-
 import Navbar from './navbar/Navbar';
 import CategoryBar from './category/CategoryBar';
 import Home from "./view/Home";
 import Favorites from "./view/Favorites";
-
-
 import './App.scss';
 
 function App() {

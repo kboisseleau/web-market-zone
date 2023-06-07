@@ -27,6 +27,11 @@ $desktop-screen: 1024px;
         height: 45px;
         width: 140px;
       }
+      li {
+        .text-icon {
+          font-size: .9em;
+        }
+      }
     }
     #right-navbar {
       display: flex;
@@ -44,6 +49,25 @@ $desktop-screen: 1024px;
         color: #474747;
         svg {
           width: 100%;
+        }
+      }
+      .hover {
+        &::after {
+          display:block;
+          content: '';
+          border-bottom: solid 2px #ec5a13;  
+          transform: scaleX(0);  
+          transition: transform 400ms ease-in-out;
+        }
+        &:hover::after {
+          transform: scaleX(1); 
+        }
+      }
+      .left-content {
+        display: flex;
+        width: 11rem;
+        .left-icon {
+          width: 3rem;
         }
       }
     }

@@ -23,34 +23,34 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <Link to="/add-product">
-                <GrAddCircle className="vertical-align-icon" size={sizeIcon} />
+              <Link to="/add-product" className="left-content">
+                <GrAddCircle className="vertical-align-icon left-icon" size={sizeIcon} />
                 <p className="text-icon">Ajouter un produit</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/search" className="left-content">
+                <BiSearch className="vertical-align-icon left-icon" size={sizeIcon} />
+                <p className="text-icon hover">Rechercher</p>
               </Link>
             </li>
           </div>
 
           <div id="right-navbar">
             <li>
-              <Link to="/search">
-                <BiSearch className="vertical-align-icon" size={sizeIcon} />
-                <p className="text-icon">Rechercher</p>
-              </Link>
-            </li>
-            <li>
-              <Link to="/favorites">
+              <Link to="/favorites" className="hover">
                 <HiOutlineHeart className="vertical-align-icon" size={sizeIcon} />
                 <p className="text-icon">Favoris</p>
               </Link>
             </li>
             <li>
-              <Link to="/messages">
+              <Link to="/messages" className="hover">
                 <BiMessageDetail className="vertical-align-icon" size={sizeIcon} />
                 <p className="text-icon">Messages</p>
               </Link>
             </li>
             <li>
-              <Link to="/login">
+              <Link to="/login" className="hover">
                 <BiUser className="vertical-align-icon" size={sizeIcon} />
                 <p className="text-icon">Se connecter</p>
               </Link>
