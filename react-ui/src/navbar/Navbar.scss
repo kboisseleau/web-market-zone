@@ -18,6 +18,7 @@ $desktop-screen: 1024px;
     align-items: center;
     justify-content: space-around;
     height: 55px;
+    padding: 0;
     #left-navbar {
       display: flex;
       height: 51px;
@@ -40,6 +41,10 @@ $desktop-screen: 1024px;
       }
       a {
         text-decoration: none;
+        color: #474747;
+        svg {
+          width: 100%;
+        }
       }
     }
     #home-logo {

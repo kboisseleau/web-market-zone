@@ -1,5 +1,4 @@
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   Link
@@ -14,57 +13,52 @@ import './Navbar.scss';
 function Navbar() {
   const sizeIcon = "1.75em"
   return (
-    <Router>
-    <div>
+    <>
       <nav>
         <ul id="navbar">
           <div id="left-navbar">
             <li>
               <Link id="home-link" to="/">
                 <img id="home-logo" src={logo} alt="" />
-                </Link>
+              </Link>
             </li>
             <li>
-              <GrAddCircle className="vertical-align-icon" size={sizeIcon} />
-              <p className="text-icon">Ajouter un produit</p>
+              <Link to="/add-product">
+                <GrAddCircle className="vertical-align-icon" size={sizeIcon} />
+                <p className="text-icon">Ajouter un produit</p>
+              </Link>
             </li>
           </div>
 
           <div id="right-navbar">
             <li>
-              <BiSearch className="vertical-align-icon" size={sizeIcon} />
-              <p className="text-icon">Rechercher</p>
+              <Link to="/search">
+                <BiSearch className="vertical-align-icon" size={sizeIcon} />
+                <p className="text-icon">Rechercher</p>
+              </Link>
             </li>
             <li>
-              <HiOutlineHeart className="vertical-align-icon" size={sizeIcon} />
-              <p className="text-icon">Favoris</p>
+              <Link to="/favorites">
+                <HiOutlineHeart className="vertical-align-icon" size={sizeIcon} />
+                <p className="text-icon">Favoris</p>
+              </Link>
             </li>
             <li>
-              <BiMessageDetail className="vertical-align-icon" size={sizeIcon} />
-              <p className="text-icon">Messages</p>
+              <Link to="/messages">
+                <BiMessageDetail className="vertical-align-icon" size={sizeIcon} />
+                <p className="text-icon">Messages</p>
+              </Link>
             </li>
             <li>
-              <BiUser className="vertical-align-icon" size={sizeIcon} />
-              <p className="text-icon">Se connecter</p>
+              <Link to="/login">
+                <BiUser className="vertical-align-icon" size={sizeIcon} />
+                <p className="text-icon">Se connecter</p>
+              </Link>
             </li>
           </div>
-
         </ul>
       </nav>
-
-      <Routes>
-{/*         <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/users">
-          <Users />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route> */}
-      </Routes>
-    </div>
-  </Router>
+    </>
   );
 }
 
