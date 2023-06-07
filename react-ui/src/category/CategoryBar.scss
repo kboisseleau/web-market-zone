@@ -1,0 +1,20 @@
+#category-bar {
+  margin-top: 2rem;
+  #category-list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+      font-size: 0.85em;
+      &::before {
+        content: "•";
+        font-weight: 600;
+        font-size: 1.75rem;
+        vertical-align: sub;
+
+        margin-right: 51px;
+      }
+    }
+  }
+}
