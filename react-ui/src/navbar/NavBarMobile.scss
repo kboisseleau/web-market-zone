@@ -77,13 +77,23 @@ nav {
 
 
 @media screen and (min-width: $tablet-screen) {
-  #navbar-mobile {
-    display: none;
+  nav {
+    #navbar-mobile {
+      display: none;
+    }
+    #container-logo {
+      display: none;
+    }
   }
 }
 
 @media screen and (min-width: $desktop-screen) {
-  #navbar-mobile {
-    display: none;
+  nav {
+    #navbar-mobile {
+      display: none;
+    }
+    #container-logo {
+      display: none;
+    }
   }
 }
