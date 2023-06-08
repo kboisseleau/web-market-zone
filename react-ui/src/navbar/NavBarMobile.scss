@@ -9,13 +9,21 @@ $desktop-screen: 1024px;
 #navbar-mobile {
   display: block;
   #burger-btn {
-
+    border: none;
+    background-color: transparent;
+    margin: 1rem 0 0 1rem;
+    cursor: pointer;
   }
 
   .show-menu {
-        cursor: pointer;
-        background-color: transparent;
-        margin: 1rem 1rem 0 0;
+    background-color: #FFFF;
+    position: fixed;
+    right: inherit;
+    z-index: 1100;
+    width: 300px;
+    height: 100%;
+    transition: all 0.5s ease 0s;
+    top: 0
      }
     
     #nav-content-logo {
