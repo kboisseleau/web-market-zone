@@ -74,7 +74,7 @@ function NavbarMobile() {
         </div>
         
       </div>
-      <Link to="/">
+      <Link to="/" id="container-logo">
         <img id="home-logo-mobile" src={logo} alt="" />
       </Link>
     </>

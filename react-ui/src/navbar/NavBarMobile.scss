@@ -1,69 +1,80 @@
 $tablet-screen: 768px;
 $desktop-screen: 1024px;
 
-
-#navbar-mobile {
-  display: block;
-  #burger-btn {
-    border: none;
-    background-color: transparent;
-    margin: 1rem 0 0 1rem;
-    cursor: pointer;
+nav {
+  display: flex;
+  justify-content: space-between;
+  #container-logo {
+    width: 100%;
+    height: 9rem;
+    #home-logo-mobile {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: 17% 20%;
+    }
   }
 
-  .show-menu {
+  #navbar-mobile {
     display: block;
-    background-color: #FFFF;
-    position: fixed;
-    right: inherit;
-    z-index: 1100;
-    width: 75%;
-    height: 100%;
-    top: 0;
-    #nav-mobile-header {
-      display: flex;
-      align-items: start;
-      #nav-content-logo {
-        width: 100%;
-        height: 150px;
-        #nav-logo-mobile {
+    #burger-btn {
+      border: none;
+      background-color: transparent;
+      margin: 1rem 0 0 1rem;
+      cursor: pointer;
+    }
+  
+    .show-menu {
+      display: block;
+      background-color: #FFFF;
+      position: fixed;
+      right: inherit;
+      z-index: 1100;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      #nav-mobile-header {
+        display: flex;
+        align-items: start;
+        #nav-content-logo {
           width: 100%;
-          height: 100%;
-          object-fit: contain;
+          height: 150px;
+          #nav-logo-mobile {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        #close-btn {
+          border: none;
+          background-color: transparent;
+          margin: 1rem 1rem 0 0;
         }
       }
-      #close-btn {
-        border: none;
-        background-color: transparent;
-        margin: 1rem 1rem 0 0;
-      }
-    }
-    ul {
-      padding-left: 0;
-      li {
-        list-style: none;
-        margin-left: 1rem;
-        a {
-          text-decoration: none;
-          color: black;
-          display: flex;
-          align-items: center;
-          p {
-            margin-left: 1rem;
+      ul {
+        padding-left: 0;
+        li {
+          list-style: none;
+          margin-left: 1rem;
+          a {
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            p {
+              margin-left: 1rem;
+            }
           }
         }
       }
     }
-  }
-
-  .hide-menu {
-    display: none;
+  
+    .hide-menu {
+      display: none;
+    }
   }
 }
 
-#home-logo-mobile {
-  width: 12rem;
-}
 
 @media screen and (min-width: $tablet-screen) {
   #navbar-mobile {
