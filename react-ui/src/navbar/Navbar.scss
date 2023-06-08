@@ -2,11 +2,7 @@ $tablet-screen: 768px;
 $desktop-screen: 1024px;
 
 #navbar {
-  #home-logo {
-  }
-  li {
-    list-style: none;
-  }
+  display: none;
 }
 
 @media screen and (min-width: $tablet-screen) {
