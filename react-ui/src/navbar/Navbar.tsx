@@ -1,11 +1,5 @@
-import {
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-
+import { Link } from "react-router-dom";
 import NavbarMobile from "./NavBarMobile";
-
 import {BiSearch, BiMessageDetail, BiUser} from 'react-icons/bi'
 import {GrAddCircle} from 'react-icons/gr'
 import {HiOutlineHeart} from 'react-icons/hi'

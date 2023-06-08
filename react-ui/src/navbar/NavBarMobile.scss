@@ -1,10 +1,6 @@
 $tablet-screen: 768px;
 $desktop-screen: 1024px;
 
-@keyframes slide {
-  from { display: block;}
-  to { transform: translateY(40px);}
-}
 
 #navbar-mobile {
   display: block;
@@ -16,13 +12,13 @@ $desktop-screen: 1024px;
   }
 
   .show-menu {
+    display: block;
     background-color: #FFFF;
     position: fixed;
     right: inherit;
     z-index: 1100;
-    width: 100vw;
+    width: 75%;
     height: 100%;
-    transition: all 0.5s ease 0s;
     top: 0;
     #nav-mobile-header {
       display: flex;
@@ -58,22 +54,16 @@ $desktop-screen: 1024px;
         }
       }
     }
-  
   }
-
 
   .hide-menu {
     display: none;
-    transition: all 0.5s ease 0s;
-
   }
 }
-
 
 #home-logo-mobile {
   width: 12rem;
 }
-
 
 @media screen and (min-width: $tablet-screen) {
   #navbar-mobile {
@@ -85,5 +75,4 @@ $desktop-screen: 1024px;
   #navbar-mobile {
     display: none;
   }
-
 }

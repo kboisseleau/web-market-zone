@@ -1,9 +1,5 @@
 import { useState } from "react";
-import {
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+import { Link } from "react-router-dom";
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BiSearch, BiMessageDetail, BiUser} from 'react-icons/bi'
 import {GrAddCircle, GrClose} from 'react-icons/gr'
@@ -76,9 +72,7 @@ function NavbarMobile() {
             </li>
           </ul>
         </div>
-
-
-
+        
       </div>
       <Link to="/">
         <img id="home-logo-mobile" src={logo} alt="" />
