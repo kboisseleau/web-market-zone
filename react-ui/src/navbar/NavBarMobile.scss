@@ -20,26 +20,33 @@ $desktop-screen: 1024px;
     position: fixed;
     right: inherit;
     z-index: 1100;
-    width: 300px;
+    width: 100vw;
     height: 100%;
     transition: all 0.5s ease 0s;
-    top: 0
-     }
-    
-    #nav-content-logo {
-      width: 100%;
-      height: 150px;
-      #nav-logo-mobile {
+    top: 0;
+    #nav-mobile-header {
+      display: flex;
+      align-items: start;
+      #nav-content-logo {
         width: 100%;
-        height: 100%;
-        object-fit: contain;
+        height: 150px;
+        #nav-logo-mobile {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      #close-btn {
+        border: none;
+        background-color: transparent;
+        margin: 1rem 1rem 0 0;
       }
     }
-
     ul {
       padding-left: 0;
       li {
         list-style: none;
+        margin-left: 1rem;
         a {
           text-decoration: none;
           color: black;
@@ -52,6 +59,9 @@ $desktop-screen: 1024px;
       }
     }
   
+  }
+
+
   .hide-menu {
     display: none;
     transition: all 0.5s ease 0s;
