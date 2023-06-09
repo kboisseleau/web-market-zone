@@ -4,9 +4,9 @@ function TextArea() {
 
 
   return (
-    <div>
+    <div id="textarea-container">
       <label htmlFor="description">Description du produit</label>
-      <textarea autoCapitalize="sentences" spellCheck required></textarea>
+      <textarea cols={8} rows={4} autoCapitalize="sentences" spellCheck required></textarea>
   
     </div>
   );
