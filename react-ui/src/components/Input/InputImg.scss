@@ -1,0 +1,28 @@
+#input-img-content {
+  #input-img-title {
+    margin-left: 4rem;
+  }
+  #img-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .label-file {
+      cursor: pointer;
+    }
+  
+    .input-file {
+      display: none;
+    }
+    
+    #output {
+      width: 150px;
+      height: 135px;
+      object-fit: cover;
+    }
+    .img-test {
+      width: 150px;
+      height: 135px;
+      object-fit: cover;
+    }
+  }
+}
