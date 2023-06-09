@@ -8,6 +8,8 @@ function AddProduct() {
 
 
   return (
+    /* make component reusable with props etc and improve code loop when necessary
+    save data send by form, wrap with form */
     <div id="add-product-content">
       <Input title="Quel est le titre de l'annonce ?" />
       <InputImg />

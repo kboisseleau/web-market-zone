@@ -1,0 +1,29 @@
+#home-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  
+  .card-list {
+    border: solid 1px;
+    border-radius: 4px;
+    width: 25%;
+    height: 350px;
+    .btn-content {
+      display: flex;
+      justify-content: space-evenly;
+      margin: .5rem 0 .5rem 0;
+      button {
+        border: none;
+        background-color: transparent;
+
+      }
+    }
+    img {
+      height: 70%;
+      width: 100%;
+
+      object-fit: cover;
+    }
+  }
+}
+
